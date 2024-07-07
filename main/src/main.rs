@@ -32,8 +32,6 @@ fn inspect_module_functions(py: Python, module: &PyModule) -> PyResult<()> {
 
 fn main() {
     pyo3::prepare_freethreaded_python();
-    // Using the generated methods
-
     let context = fs::read_to_string("main/src/myCustomImplementation.py")
         .expect("Should have been able to read file");
     let mut custom_python_machine: Option<CustomMachine> = None;

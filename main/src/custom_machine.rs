@@ -3,6 +3,7 @@ use std::sync::Arc;
 use crate::machine::MachineTrait;
 use pyo3::prelude::*;
 
+// Custom python machine, could be generalized to any language
 pub struct CustomMachine {
     required_method1 : Arc<PyObject>,
     required_method2 : Arc<PyObject>,
