@@ -1,0 +1,11 @@
+[package]
+name = "main"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.16", features = ["extension-module"] }
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
